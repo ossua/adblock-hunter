@@ -1,0 +1,2 @@
+# hunt-adblock
+Detect adblocks

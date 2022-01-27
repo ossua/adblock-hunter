@@ -1,6 +1,6 @@
 {
   "name": "adblock-hunter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detect adblock usage with ease",
   "main": "dist/adblock-hunter.cjs.js",
   "module": "dist/adblock-hunter.es5.js",

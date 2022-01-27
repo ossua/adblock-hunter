@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adblock Hunter</title>
+  <link rel="stylesheet" href="styles.css"></link>
+  <script type="text/javascript" src="../dist/adblock-hunter.js" defer></script>
+</head>
+<body>
+  <div>
+    <h2>Adblock Hunter</h2>
+    <p id="results">
+      Detecting..
+    </p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const { isAdblocking } = window['adblock-hunter']
+      const results = document.querySelector('#results')
+
+      isAdblocking().then(res => {
+        if (res) {
+          results.classList.add('detected')
+          results.textContent = 'Adblock usage detected!'
+        } else {
+          results.classList.add('notDetected')
+          results.textContent = 'You are not using an Adblock :)'
+        }
+      })
+    })
+  </script>
+</body>
+</html>

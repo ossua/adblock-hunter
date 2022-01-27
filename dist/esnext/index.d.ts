@@ -2,5 +2,5 @@
  * Check if AdBlocker is present in user's browser
  * @return Promise<Boolean>
  */
-declare const isAblocking: () => Promise<boolean>;
-export { isAblocking, };
+declare const isAdblocking: () => Promise<boolean>;
+export { isAdblocking, };

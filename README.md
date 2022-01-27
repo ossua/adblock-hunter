@@ -7,6 +7,7 @@ $ npm install --save adblock-hunter
 ```
 
 ## Examples
+### NPM:
 ```javascript
 import { isAdblocking } from 'adblock-hunter'
 
@@ -26,6 +27,27 @@ const someFunction = async () => {
     // an adblocker is present
   }
 }
+```
+
+### Browser
+```html
+<head>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Blaumaus/adblock-hunter/dist/adblock-hunter.js" defer></script>
+</head>
+<body>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const { isAdblocking } = window['adblock-hunter']
+
+      isAdblocking().then(res => {
+        if (res) {
+          // Adblock Detected
+        }
+      })
+    })
+  </script>
+</body>
+</html>
 ```
 
 ## API

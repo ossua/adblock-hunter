@@ -3,7 +3,7 @@ const adURL = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
  * Check if AdBlocker is present in user's browser
  * @return Promise<Boolean>
  */
-const isAblocking = async () => {
+const isAdblocking = async () => {
     let enabled = false;
     try {
         await fetch(adURL);
@@ -13,5 +13,5 @@ const isAblocking = async () => {
     }
     return enabled;
 };
-export { isAblocking, };
+export { isAdblocking, };
 //# sourceMappingURL=index.js.map

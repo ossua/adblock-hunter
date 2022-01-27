@@ -60,7 +60,7 @@ var adURL = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
  * Check if AdBlocker is present in user's browser
  * @return Promise<Boolean>
  */
-var isAblocking = function () { return __awaiter(void 0, void 0, void 0, function () {
+var isAdblocking = function () { return __awaiter(void 0, void 0, void 0, function () {
     var enabled;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -82,4 +82,4 @@ var isAblocking = function () { return __awaiter(void 0, void 0, void 0, functio
     });
 }); };
 
-exports.isAblocking = isAblocking;
+exports.isAdblocking = isAdblocking;

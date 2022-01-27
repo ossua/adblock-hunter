@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d1117;
+}
+
+h2 {
+  color: #f0f6fc;
+  margin-bottom: 10px;
+  font-size: 36px;
+  text-align: center;
+}
+
+#results {
+  font-size: 30px;
+  color: #f0f6fc;
+  text-align: center;
+}
+
+.detected {
+  color: #e92424 !important;
+}
+
+.notDetected {
+  color: #24b124 !important;
+}

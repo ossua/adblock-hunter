@@ -1,4 +1,7 @@
 # Adblock Hunter 🔫
+
+[![Live Demonstration](https://img.shields.io/badge/LIVE%20DEMO-AVAILABLE-green.svg)](https://blaumaus.github.io/adblock-hunter/public/)
+
 This library enables you to determine whether a user is using an ad blocker or not.
 
 ## Installation
